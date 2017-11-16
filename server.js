@@ -46,6 +46,6 @@ app.use(function (err, req, res, next) {
   res.send(err.message);
 });
 
-app.listen(3000, function () {
-  console.log('Server app listening on port 3000');
+app.listen(process.env.PORT || 9090, function () {
+  console.log('Server app listening on port 9090');
 });
