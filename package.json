@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "Project with NodeJS / Express / MongoDB <br>",
-  "main": "server.js",
   "dependencies": {
     "assert": "^1.4.1",
     "async": "^2.6.0",
