@@ -204,7 +204,7 @@
       removeButtonClass: 'btn btn-default'
     });
     $(document).ready(function () {
-      $(form).on('submit', function () {
+      $('#smsForm').on('submit', function (e) {
         location.reload();
       });
     })
@@ -253,7 +253,6 @@
       var form = this;
       setTimeout(function () {
         form.submit();
-  
       }, 1500);
       return false;
     });
