@@ -228,7 +228,7 @@
       var SMSusername = document.getElementById("SMSusername").value;
       var SMSpassword = document.getElementById("SMSpassword").value;
       var force = document.getElementById("force").value;
-      var url = 'http://www.thaibulksms.com/sms_api.php';
+      var url = 'https://www.thaibulksms.com/sms_api.php';
       var pmeters = 'username=' + SMSusername + '&password=' + SMSpassword + '&tag=' + force;
       HttPRequest.open('POST', url, true);
       HttPRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
