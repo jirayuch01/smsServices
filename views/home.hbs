@@ -204,7 +204,7 @@
       removeButtonClass: 'btn btn-default'
     });
     $(document).ready(function () {
-      $(form).on('submit', function () {
+      $('#smsForm').on('submit', function (e) {
         location.reload();
       });
     })
@@ -232,8 +232,8 @@
       var pmeters = 'username=' + SMSusername + '&password=' + SMSpassword + '&tag=' + force;
       HttPRequest.open('POST', url, true);
       HttPRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-      HttPRequest.setRequestHeader("Content-length", pmeters.length);
-      HttPRequest.setRequestHeader("Connection", "close");
+      //HttPRequest.setRequestHeader("Content-length", pmeters.length);
+      //HttPRequest.setRequestHeader("Connection", "close");
       HttPRequest.send(pmeters);
       HttPRequest.onreadystatechange = function () {
         if (HttPRequest.readyState == 3) {
@@ -253,7 +253,6 @@
       var form = this;
       setTimeout(function () {
         form.submit();
-  
       }, 1500);
       return false;
     });
